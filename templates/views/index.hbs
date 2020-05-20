@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+<title> Kanban Board</title>
+
+<link rel="stylesheet" href="./css/styles.css"> 
+</head>
+
+<body>
+<div class='main-content'>
+    {{>header}}
+    <p> Use this to to make your own Kanban Board!
+
+          <div class="container-fluid">
+        <div id="sortableKanbanBoards" class="row">
+
+        
+            <div class="panel panel-primary kanban-col">
+                <div class="panel-heading">
+                    TODO
+                    <i class="fa fa-2x fa-plus-circle pull-right"></i>
+                </div>
+                <div class="panel-body">
+                    <div id="TODO" class="kanban-centered">
+
+                        <article class="kanban-entry grab" id="item1" draggable="true">
+                            <div class="kanban-entry-inner">
+                                <div class="kanban-label">
+                                    <h2><a href="#">/a> <span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="kanban-entry grab" id="item2" draggable="true">
+                            <div class="kanban-entry-inner">
+                                <div class="kanban-label">
+                                    <h2><a href="#"></a></h2>
+                                    <p> </p>
+                                </div>
+                            </div>
+                        </article>
+
+
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="#">Add a card...</a>
+                </div>
+            </div>
+          
+            <div class="panel panel-primary kanban-col">
+                <div class="panel-heading">
+                 
+                 
+                    DOING
+
+
+                    <i class="fa fa-2x fa-plus-circle pull-right"></i>
+                </div>
+                <div class="panel-body">
+                    <div id="DOING" class="kanban-centered">
+
+                        <article class="kanban-entry grab" id="item5" draggable="true">
+                            <div class="kanban-entry-inner">
+
+                                <div class="kanban-label">
+                                    <h2><a href="#">Art Ramadani</a> <span>posted a status update</span></h2>
+                                    <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="kanban-entry grab" id="item6" draggable="true">
+                            <div class="kanban-entry-inner">
+                                <div class="kanban-label">
+                                    <h2><a href="#">Job Meeting</a></h2>
+                                    <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="#">Add a card...</a>
+                </div>
+            </div>
+        ]
+            <div class="panel panel-primary kanban-col">
+                <div class="panel-heading">
+                    DONE
+                    <i class="fa fa-2x fa-plus-circle pull-right"></i>
+                </div>
+                <div class="panel-body">
+                    <div id="DONE" class="kanban-centered">
+
+                        <article class="kanban-entry grab" id="item5" draggable="true">
+                            <div class="kanban-entry-inner">
+
+                                <div class="kanban-label">
+                                    <h2><a href="#">Ishara</a> <span>posted a status update</span></h2>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="#">Add a card...</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </p>
+    <form>
+        <input placeholder= "Add Task">
+        <button> Add </button>
+    </form>
+    <p id="message-1"> </p>
+    <p id="message-2"></p>
+    </div>
+{{>footer}}
+<script src= '/js/app.js'> </script>
+</body>
+
+</html>
